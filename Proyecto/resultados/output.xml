@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-11-03T02:01:29.664409" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\pauli\PycharmProjects\Proyecto\tests\test.robot">
+<test id="s1-t1" name="Agregar y Quitar Elementos" line="8">
+<kw name="Inicializar el navegador con URL" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:29.916268" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/add_remove_elements/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-03T02:01:29.916049" elapsed="2.562596"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-03T02:01:32.478971" elapsed="0.026214"/>
+</kw>
+<arg>${ADD_REMOVE_URL}</arg>
+<status status="PASS" start="2024-11-03T02:01:29.915326" elapsed="2.589998"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:32.506284" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:32.505943" elapsed="0.095209"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-11-03T02:01:32.505805" elapsed="0.095543"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:32.602297" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:32.601940" elapsed="0.051761"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-11-03T02:01:32.601688" elapsed="0.052181"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:32.654674" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:32.654361" elapsed="0.050060"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-11-03T02:01:32.654161" elapsed="0.050347"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:32.705064" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:32.704863" elapsed="0.033256"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-11-03T02:01:32.704716" elapsed="0.033488"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:32.738689" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:32.738489" elapsed="0.034234"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2024-11-03T02:01:32.738349" elapsed="0.034461"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:32.773247" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:32.773064" elapsed="0.029127"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2024-11-03T02:01:32.772954" elapsed="0.029321"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:32.802672" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:32.802512" elapsed="0.027125"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2024-11-03T02:01:32.802402" elapsed="0.027321"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:32.830143" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:32.829981" elapsed="0.026110"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2024-11-03T02:01:32.829859" elapsed="0.026316"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:32.856561" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:32.856397" elapsed="0.029638"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2024-11-03T02:01:32.856299" elapsed="0.029823"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:32.886493" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:32.886342" elapsed="0.060060"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2024-11-03T02:01:32.886243" elapsed="0.060392"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:32.947743" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:32.947291" elapsed="0.066807"/>
+</kw>
+<var name="${i}">10</var>
+<status status="PASS" start="2024-11-03T02:01:32.947012" elapsed="0.067171"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.014616" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.014425" elapsed="0.026455"/>
+</kw>
+<var name="${i}">11</var>
+<status status="PASS" start="2024-11-03T02:01:33.014310" elapsed="0.026646"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.041354" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.041180" elapsed="0.026201"/>
+</kw>
+<var name="${i}">12</var>
+<status status="PASS" start="2024-11-03T02:01:33.041077" elapsed="0.026391"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.067862" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.067704" elapsed="0.032568"/>
+</kw>
+<var name="${i}">13</var>
+<status status="PASS" start="2024-11-03T02:01:33.067602" elapsed="0.032769"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.100889" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.100665" elapsed="0.031329"/>
+</kw>
+<var name="${i}">14</var>
+<status status="PASS" start="2024-11-03T02:01:33.100519" elapsed="0.031674"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.132582" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.132432" elapsed="0.025664"/>
+</kw>
+<var name="${i}">15</var>
+<status status="PASS" start="2024-11-03T02:01:33.132327" elapsed="0.025852"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.158641" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.158432" elapsed="0.029644"/>
+</kw>
+<var name="${i}">16</var>
+<status status="PASS" start="2024-11-03T02:01:33.158317" elapsed="0.029864"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.188632" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.188476" elapsed="0.028244"/>
+</kw>
+<var name="${i}">17</var>
+<status status="PASS" start="2024-11-03T02:01:33.188365" elapsed="0.028430"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.217255" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.217040" elapsed="0.026463"/>
+</kw>
+<var name="${i}">18</var>
+<status status="PASS" start="2024-11-03T02:01:33.216926" elapsed="0.026650"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.243964" level="INFO">Clicking element 'xpath= //*[@id="content"]/div/button'.</msg>
+<arg>xpath= //*[@id="content"]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.243810" elapsed="0.025893"/>
+</kw>
+<var name="${i}">19</var>
+<status status="PASS" start="2024-11-03T02:01:33.243710" elapsed="0.026065"/>
+</iter>
+<var>${i}</var>
+<value>20</value>
+<status status="PASS" start="2024-11-03T02:01:32.505580" elapsed="0.764247"/>
+</for>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.270101" elapsed="0.018583"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.302945" level="INFO">${count} = 20</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.288984" elapsed="0.014268"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-11-03T02:01:33.306434" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${count}</arg>
+<arg>20</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.305103" elapsed="0.001913"/>
+</kw>
+<while condition="${count} &gt; 0">
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.314645" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.312650" elapsed="0.057328"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.400510" level="INFO">${count} = 19</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.371283" elapsed="0.029281"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.308316" elapsed="0.092341"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.401273" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.401059" elapsed="0.032790"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.441753" level="INFO">${count} = 18</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.434005" elapsed="0.007832"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.400722" elapsed="0.041242"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.442744" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.442458" elapsed="0.032441"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.485176" level="INFO">${count} = 17</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.475149" elapsed="0.010068"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.442043" elapsed="0.043243"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.485731" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.485557" elapsed="0.029976"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.522671" level="INFO">${count} = 16</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.515700" elapsed="0.007008"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.485329" elapsed="0.037457"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.523180" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.523028" elapsed="0.060793"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.596061" level="INFO">${count} = 15</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.584034" elapsed="0.012098"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.522826" elapsed="0.073420"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.597135" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.596801" elapsed="0.033657"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.637382" level="INFO">${count} = 14</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.630611" elapsed="0.006808"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.596329" elapsed="0.041246"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.637988" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.637833" elapsed="0.030511"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.675517" level="INFO">${count} = 13</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.668509" elapsed="0.007078"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.637619" elapsed="0.038070"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.676171" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.675994" elapsed="0.031881"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.717375" level="INFO">${count} = 12</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.708033" elapsed="0.009385"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.675749" elapsed="0.041742"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.717909" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.717752" elapsed="0.039260"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.770039" level="INFO">${count} = 11</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.757257" elapsed="0.012843"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.717530" elapsed="0.052671"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.770823" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.770573" elapsed="0.032951"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.812208" level="INFO">${count} = 10</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.803759" elapsed="0.008495"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.770265" elapsed="0.042098"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.812981" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.812750" elapsed="0.030395"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.852382" level="INFO">${count} = 9</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.843310" elapsed="0.009113"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.812405" elapsed="0.040083"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.852885" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.852738" elapsed="0.034694"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.896152" level="INFO">${count} = 8</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.887611" elapsed="0.008606"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.852526" elapsed="0.043794"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.896998" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.896782" elapsed="0.035649"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.939190" level="INFO">${count} = 7</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.932603" elapsed="0.006631"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.896385" elapsed="0.042916"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.939739" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.939577" elapsed="0.035226"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.984788" level="INFO">${count} = 6</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.975004" elapsed="0.009824"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.939341" elapsed="0.045553"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:33.985327" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:33.985170" elapsed="0.042886"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:34.038537" level="INFO">${count} = 5</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.028294" elapsed="0.010285"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:33.984935" elapsed="0.053717"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:34.039424" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.039130" elapsed="0.044034"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:34.092167" level="INFO">${count} = 4</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.083354" elapsed="0.008897"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:34.038716" elapsed="0.053673"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:34.093651" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.093307" elapsed="0.045034"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:34.148141" level="INFO">${count} = 3</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.138534" elapsed="0.009643"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:34.092719" elapsed="0.055518"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:34.148663" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.148521" elapsed="0.040149"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:34.201528" level="INFO">${count} = 2</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.188868" elapsed="0.012702"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:34.148295" elapsed="0.053347"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:34.202090" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.201924" elapsed="0.041390"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:34.251519" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.243511" elapsed="0.008049"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:34.201684" elapsed="0.049947"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:34.252070" level="INFO">Clicking element 'xpath=//*[@id="elements"]/button[1]'.</msg>
+<arg>xpath=//*[@id="elements"]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.251909" elapsed="0.041677"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:34.303673" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.293805" elapsed="0.009908"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:34.251671" elapsed="0.052109"/>
+</iter>
+<status status="PASS" start="2024-11-03T02:01:33.308295" elapsed="0.995626"/>
+</while>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:34.312430" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>xpath=//*[@id="elements"]/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.304247" elapsed="0.008221"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-11-03T02:01:34.313124" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${count}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.312833" elapsed="0.000354"/>
+</kw>
+<kw name="Cerrar el navegador" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-03T02:01:34.313797" elapsed="2.187713"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:34.313546" elapsed="2.188185"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:29.914684" elapsed="6.587772"/>
+</test>
+<test id="s1-t2" name="Prueba de Autenticación Básica - Válida" line="32">
+<kw name="Autenticación con credenciales" owner="keywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-11-03T02:01:36.505468" level="INFO">${auth_url} = https://admin:admin@the-internet.herokuapp.com/basic_auth</msg>
+<var>${auth_url}</var>
+<arg>https://${user}:${password}@the-internet.herokuapp.com/basic_auth</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-11-03T02:01:36.505097" elapsed="0.000433"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:36.506170" level="INFO">Opening browser 'chrome' to base url 'https://admin:admin@the-internet.herokuapp.com/basic_auth'.</msg>
+<arg>${auth_url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-03T02:01:36.505841" elapsed="2.532157"/>
+</kw>
+<arg>${VALID_USER}</arg>
+<arg>${VALID_PASS}</arg>
+<status status="PASS" start="2024-11-03T02:01:36.504487" elapsed="2.533682"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Congratulations! You must have the proper credentials.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-11-03T02:01:39.038460" elapsed="0.014795"/>
+</kw>
+<kw name="Cerrar el navegador" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-03T02:01:39.053914" elapsed="2.217893"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:39.053679" elapsed="2.218333"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:36.503700" elapsed="4.768691"/>
+</test>
+<test id="s1-t3" name="Prueba de Autenticación Básica - Inválida" line="37">
+<kw name="Autenticación con credenciales" owner="keywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-11-03T02:01:41.275099" level="INFO">${auth_url} = https://admin1:admin1@the-internet.herokuapp.com/basic_auth</msg>
+<var>${auth_url}</var>
+<arg>https://${user}:${password}@the-internet.herokuapp.com/basic_auth</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-11-03T02:01:41.274806" elapsed="0.000339"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:41.275752" level="INFO">Opening browser 'chrome' to base url 'https://admin1:admin1@the-internet.herokuapp.com/basic_auth'.</msg>
+<arg>${auth_url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-03T02:01:41.275408" elapsed="1.882897"/>
+</kw>
+<arg>${INVALID_USER}</arg>
+<arg>${INVALID_PASS}</arg>
+<status status="PASS" start="2024-11-03T02:01:41.274324" elapsed="1.884167"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=/html/body</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-11-03T02:01:43.159391" elapsed="0.018585"/>
+</kw>
+<kw name="Cerrar el navegador" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-03T02:01:43.178811" elapsed="2.292854"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:43.178460" elapsed="2.293380"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:41.273574" elapsed="4.198493"/>
+</test>
+<test id="s1-t4" name="Validación de Checkboxes" line="42">
+<kw name="Inicializar el navegador con URL" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:45.473624" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/checkboxes'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-03T02:01:45.473413" elapsed="2.781181"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-03T02:01:48.254788" elapsed="0.034213"/>
+</kw>
+<arg>${CHECKBOX_URL}</arg>
+<status status="PASS" start="2024-11-03T02:01:45.473125" elapsed="2.816058"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//*[@id="content"]/div/h3</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-11-03T02:01:48.289643" elapsed="0.022223"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:48.312562" level="INFO">Clicking element 'xpath=//*[@id="checkboxes"]/input[1]'.</msg>
+<arg>xpath=//*[@id="checkboxes"]/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:48.312281" elapsed="0.083001"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:48.416359" level="INFO">${is_selected1} = true</msg>
+<var>${is_selected1}</var>
+<arg>xpath=//*[@id="checkboxes"]/input[1]</arg>
+<arg>checked</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:48.395710" elapsed="0.020698"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2024-11-03T02:01:48.416922" level="INFO">Length is 4.</msg>
+<arg>${is_selected1}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2024-11-03T02:01:48.416729" elapsed="0.000259"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-03T02:01:48.435909" level="INFO">${is_selected2} = true</msg>
+<var>${is_selected2}</var>
+<arg>xpath=//*[@id="checkboxes"]/input[2]</arg>
+<arg>checked</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-03T02:01:48.417249" elapsed="0.018707"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2024-11-03T02:01:48.436416" level="INFO">Length is 4.</msg>
+<arg>${is_selected2}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2024-11-03T02:01:48.436248" elapsed="0.000222"/>
+</kw>
+<kw name="Cerrar el navegador" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-03T02:01:48.437083" elapsed="2.213835"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:48.436783" elapsed="2.214423"/>
+</kw>
+<status status="PASS" start="2024-11-03T02:01:45.472695" elapsed="5.178993"/>
+</test>
+<status status="PASS" start="2024-11-03T02:01:29.665877" elapsed="20.987569"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
