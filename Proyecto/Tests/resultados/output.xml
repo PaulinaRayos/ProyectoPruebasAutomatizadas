@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.4 on darwin)" generated="2024-11-03T15:15:05.340656" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="/Users/user/Documents/GitHub/ProyectoPruebasAutomatizadas/Proyecto/Tests/test.robot">
+<test id="s1-t1" name="Prueba Drag and Drop" line="131">
+<kw name="Inicializar el navegador Safari con URL" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-03T15:15:05.439197" level="INFO">Opening browser 'safari' to base url 'https://the-internet.herokuapp.com/drag_and_drop'.</msg>
+<arg>${url}</arg>
+<arg>safari</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-03T15:15:05.439115" elapsed="2.029399"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-03T15:15:07.469344" elapsed="0.026620"/>
+</kw>
+<arg>${DRAGDROP_URL}</arg>
+<status status="PASS" start="2024-11-03T15:15:05.438851" elapsed="2.057580"/>
+</kw>
+<kw name="Drag And Drop A To B" owner="keywords">
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-11-03T15:15:07.505901" level="INFO">${a} = &lt;selenium.webdriver.remote.webelement.WebElement (session="12C2D0E5-E2E4-48AD-98BB-CA62D055B436", element="node-8EE89606-A03A-42EA-A10D-DD710DA5673A")&gt;</msg>
+<var>${a}</var>
+<arg>${BOX_A}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-11-03T15:15:07.498419" elapsed="0.007547"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-11-03T15:15:07.512019" level="INFO">${b} = &lt;selenium.webdriver.remote.webelement.WebElement (session="12C2D0E5-E2E4-48AD-98BB-CA62D055B436", element="node-2D766CE1-8814-4BCD-BF27-ED1B0C19AD34")&gt;</msg>
+<var>${b}</var>
+<arg>${BOX_B}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-11-03T15:15:07.506163" elapsed="0.005907"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>${a}</arg>
+<arg>${b}</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-11-03T15:15:07.512278" elapsed="1.010862"/>
+</kw>
+<status status="PASS" start="2024-11-03T15:15:07.497922" elapsed="1.025502"/>
+</kw>
+<kw name="Validate Boxes Swapped" owner="keywords">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-03T15:15:08.540666" level="INFO">${text_a} = A</msg>
+<var>${text_a}</var>
+<arg>${BOX_A}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T15:15:08.524521" elapsed="0.016222"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-03T15:15:08.552923" level="INFO">${text_b} = B</msg>
+<var>${text_b}</var>
+<arg>${BOX_B}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T15:15:08.541075" elapsed="0.011921"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${text_a}</arg>
+<arg>${text_b}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-11-03T15:15:08.553389" elapsed="0.000644"/>
+</kw>
+<status status="PASS" start="2024-11-03T15:15:08.523958" elapsed="0.030200"/>
+</kw>
+<kw name="Drag And Drop B To A" owner="keywords">
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-11-03T15:15:08.561966" level="INFO">${a} = &lt;selenium.webdriver.remote.webelement.WebElement (session="12C2D0E5-E2E4-48AD-98BB-CA62D055B436", element="node-8EE89606-A03A-42EA-A10D-DD710DA5673A")&gt;</msg>
+<var>${a}</var>
+<arg>${BOX_A}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-11-03T15:15:08.554912" elapsed="0.007114"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2024-11-03T15:15:08.567932" level="INFO">${b} = &lt;selenium.webdriver.remote.webelement.WebElement (session="12C2D0E5-E2E4-48AD-98BB-CA62D055B436", element="node-2D766CE1-8814-4BCD-BF27-ED1B0C19AD34")&gt;</msg>
+<var>${b}</var>
+<arg>${BOX_B}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-11-03T15:15:08.562286" elapsed="0.005702"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>${b}</arg>
+<arg>${a}</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-11-03T15:15:08.568243" elapsed="1.008384"/>
+</kw>
+<status status="PASS" start="2024-11-03T15:15:08.554557" elapsed="1.022387"/>
+</kw>
+<kw name="Validate Boxes Swapped" owner="keywords">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-03T15:15:09.590800" level="INFO">${text_a} = A</msg>
+<var>${text_a}</var>
+<arg>${BOX_A}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T15:15:09.578132" elapsed="0.012719"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-03T15:15:09.602279" level="INFO">${text_b} = B</msg>
+<var>${text_b}</var>
+<arg>${BOX_B}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T15:15:09.591060" elapsed="0.011277"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${text_a}</arg>
+<arg>${text_b}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-11-03T15:15:09.602590" elapsed="0.000382"/>
+</kw>
+<status status="PASS" start="2024-11-03T15:15:09.577519" elapsed="0.025595"/>
+</kw>
+<kw name="Cerrar el navegador" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-03T15:15:09.604098" elapsed="0.260713"/>
+</kw>
+<status status="PASS" start="2024-11-03T15:15:09.603702" elapsed="0.261242"/>
+</kw>
+<tag>drag_drop</tag>
+<status status="PASS" start="2024-11-03T15:15:05.438615" elapsed="4.426434"/>
+</test>
+<doc>Suite de pruebas para validar la funcionalidad de la aplicación "The Internet".</doc>
+<status status="PASS" start="2024-11-03T15:15:05.341274" elapsed="4.524224"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">drag_drop</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -68,3 +68,72 @@ Validación de Checkboxes
     ${is_selected2}=    Get Element Attribute    xpath=//*[@id="checkboxes"]/input[2]    checked
     Should Not Be Empty    ${is_selected2}
 
+
+#Prueba Context Menu
+Prueba Context Menu
+    [Tags]    context_menu
+    [Documentation]     Verifica que se seleccione el context menú y despliegue la alerta
+
+    Inicializar el navegador Safari con URL     ${CONTEXT_URL}
+
+    Wait Until Page Contains Element    xpath=//*[@id="hot-spot"]
+
+    # Hacer clic derecho en la caja
+    Execute JavaScript    document.querySelector('#hot-spot').dispatchEvent(new MouseEvent('contextmenu', {bubbles: true}))
+
+    Sleep   2s
+
+    # Validar que el texto de la alerta es igual a "You selected a context menu"
+    ${alert_text}=    Get Alert Text
+    Should Be Equal As Strings    ${alert_text}    You selected a context menu
+
+    Handle Alert
+
+    # Validar que la alerta fue cerrada
+    ${alert_present}=    Run Keyword And Return Status    Is Alert Present
+    Should Be False    ${alert_present}
+
+
+#Elementos que desaparecen 1
+Prueba Elementos que Desaparecen Botón Gallery Existe
+    [Tags]    boton_GallerySi
+    [Documentation]     Verifica si el elemento Gallery aparece cuando se recaraga la página
+
+    Inicializar el navegador Safari con URL     ${ELEMENTOS_URL}
+
+    # Actualizar hasta que el botón sea visible
+    Wait Until Element Is Visible    ${GALLERY_BUTTON}    timeout=15s
+    # Validar que el botón "Gallery" existe
+    Element Should Be Visible    ${GALLERY_BUTTON}
+
+
+#Elementos que desaparecen 1
+Prueba Elementos que Desaparecen Botón Gallery No Existe
+    [Tags]    boton_GalleryNo
+    [Documentation]     Verifica si el elemento Gallery aparece cuando se recaraga la página
+
+    Inicializar el navegador Safari con URL     ${ELEMENTOS_URL}
+
+    # Refrescar el navegador hasta que el botón no esté visible
+
+    ${Reload}=  Run Keyword And Return Status  Wait Until Element Is Not Visible    ${GALLERY_BUTTON}
+    WHILE    ${Reload} != ${TRUE}
+        ${Reload}=  Run Keyword And Return Status  Element Should Not Be Visible    ${GALLERY_BUTTON}
+        Sleep    1s
+    END
+    # Actualizar hasta que el botón sea visible
+    Wait Until Element Is Not Visible    ${GALLERY_BUTTON}    timeout=2s
+    # Validar que el botón "Gallery" existe
+    Element Should Not Be Visible    ${GALLERY_BUTTON}
+
+
+#Prueba Drag and Drop
+Prueba Drag and Drop
+
+    [Tags]    drag_drop
+    Inicializar el navegador Safari con URL     ${DRAGDROP_URL}
+
+    Drag And Drop A To B
+    Validate Boxes Swapped
+    Drag And Drop B To A
+    Validate Boxes Swapped
