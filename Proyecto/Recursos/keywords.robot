@@ -43,7 +43,7 @@ Clic en Remove
     Click Element    ${REMOVE_BUTTON}
 
 Validar Checkbox Removido
-    Wait Until Element Does Not Exist    ${CHECKBOX}    timeout=5s
+    Wait Until Element Is Not Visible    ${CHECKBOX}    timeout=5s
 
 Clic en Enable
     Click Element    ${ENABLE_BUTTON}

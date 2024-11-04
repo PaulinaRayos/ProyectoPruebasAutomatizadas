@@ -142,7 +142,7 @@ Prueba Drag and Drop
 Prueba Control dinamico
     [Tags]    control_dinamico
     [Documentation]     Verifica que los controles dinamicos funcionan mostrando un mensaje de ejemplo
-  Inicializar el navegador Safari con URL     ${CONTROL_DINAMICO_URL}
+  Inicializar el navegador con URL     ${CONTROL_DINAMICO_URL}
 
     Clic en Remove
     Validar Checkbox Removido
@@ -153,11 +153,11 @@ Prueba Control dinamico
 Prueba de Visibilidad de Opciones de Menu
       [Tags]    opciones_menu
     [Documentation]     Verifica que las opciones del menu se vean aun si la pagina scrolleo hasta abajo
-  Inicializar el navegador Safari con URL     ${CONTROL_DINAMICO_URL}
+  Inicializar el navegador con URL     ${CONTROL_DINAMICO_URL}
 
     Desplazarse Hasta el Fondo de la Página
     Validar Opciones del Menú Visibles
-    Cerrar Navegador
+    Cerrar el Navegador
 
 #Prueba de autenticación de formulario
 Autenticacion de formulario
