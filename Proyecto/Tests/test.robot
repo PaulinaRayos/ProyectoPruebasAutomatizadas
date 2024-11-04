@@ -137,3 +137,25 @@ Prueba Drag and Drop
     Validate Boxes Swapped
     Drag And Drop B To A
     Validate Boxes Swapped
+
+#Prueba Controles Dinamicos
+Prueba Control dinamico
+    [Tags]    control_dinamico
+    [Documentation]     Verifica que los controles dinamicos funcionan mostrando un mensaje de ejemplo
+  Inicializar el navegador Safari con URL     ${CONTROL_DINAMICO_URL}
+
+    Clic en Remove
+    Validar Checkbox Removido
+    Clic en Enable
+    Validar Input Habilitado
+
+#Prueba de Visibilidad de Opciones de Menú
+Prueba de Visibilidad de Opciones de Menu
+      [Tags]    opciones_menu
+    [Documentation]     Verifica que las opciones del menu se vean aun si la pagina scrolleo hasta abajo
+  Inicializar el navegador Safari con URL     ${CONTROL_DINAMICO_URL}
+
+    Desplazarse Hasta el Fondo de la Página
+    Validar Opciones del Menú Visibles
+    Cerrar Navegador
+
