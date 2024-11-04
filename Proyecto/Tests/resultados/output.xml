@@ -1,138 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.12.4 on darwin)" generated="2024-11-03T15:15:05.340656" rpa="false" schemaversion="5">
-<suite id="s1" name="Test" source="/Users/user/Documents/GitHub/ProyectoPruebasAutomatizadas/Proyecto/Tests/test.robot">
-<test id="s1-t1" name="Prueba Drag and Drop" line="131">
-<kw name="Inicializar el navegador Safari con URL" owner="keywords">
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-11-03T21:23:45.493157" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\crazy\OneDrive\Escritorio\Proyecto 2 pruebas\ProyectoPruebasAutomatizadas\Proyecto\Tests\test.robot">
+<test id="s1-t1" name="Teclas presionadas" line="186">
+<kw name="Inicializar el navegador con URL" owner="keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-03T15:15:05.439197" level="INFO">Opening browser 'safari' to base url 'https://the-internet.herokuapp.com/drag_and_drop'.</msg>
+<msg time="2024-11-03T21:23:46.054936" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/key_presses'.</msg>
+<msg time="2024-11-03T21:23:46.705967" level="WARN">The chromedriver version (129.0.6668.100) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (130.0.6723.92); currently, chromedriver 130.0.6723.91 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>${url}</arg>
-<arg>safari</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-03T15:15:05.439115" elapsed="2.029399"/>
+<status status="PASS" start="2024-11-03T21:23:46.054549" elapsed="4.373424"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-03T15:15:07.469344" elapsed="0.026620"/>
+<status status="PASS" start="2024-11-03T21:23:50.431193" elapsed="0.043079"/>
 </kw>
-<arg>${DRAGDROP_URL}</arg>
-<status status="PASS" start="2024-11-03T15:15:05.438851" elapsed="2.057580"/>
+<arg>https://the-internet.herokuapp.com/key_presses</arg>
+<status status="PASS" start="2024-11-03T21:23:46.053309" elapsed="4.421219"/>
 </kw>
-<kw name="Drag And Drop A To B" owner="keywords">
-<kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2024-11-03T15:15:07.505901" level="INFO">${a} = &lt;selenium.webdriver.remote.webelement.WebElement (session="12C2D0E5-E2E4-48AD-98BB-CA62D055B436", element="node-8EE89606-A03A-42EA-A10D-DD710DA5673A")&gt;</msg>
-<var>${a}</var>
-<arg>${BOX_A}</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-11-03T15:15:07.498419" elapsed="0.007547"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-03T21:23:55.475885" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-03T21:23:50.475038" elapsed="5.001115"/>
 </kw>
-<kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2024-11-03T15:15:07.512019" level="INFO">${b} = &lt;selenium.webdriver.remote.webelement.WebElement (session="12C2D0E5-E2E4-48AD-98BB-CA62D055B436", element="node-2D766CE1-8814-4BCD-BF27-ED1B0C19AD34")&gt;</msg>
-<var>${b}</var>
-<arg>${BOX_B}</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-11-03T15:15:07.506163" elapsed="0.005907"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T21:23:55.477855" level="INFO">Clicking element '//*[@id="target"]'.</msg>
+<arg>//*[@id="target"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T21:23:55.476963" elapsed="0.121321"/>
 </kw>
-<kw name="Drag And Drop" owner="SeleniumLibrary">
-<arg>${a}</arg>
-<arg>${b}</arg>
-<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" start="2024-11-03T15:15:07.512278" elapsed="1.010862"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-03T21:23:56.600810" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-03T21:23:55.599308" elapsed="1.001814"/>
 </kw>
-<status status="PASS" start="2024-11-03T15:15:07.497922" elapsed="1.025502"/>
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>//body</arg>
+<arg>\uE00C</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T21:23:56.601887" elapsed="0.107185"/>
 </kw>
-<kw name="Validate Boxes Swapped" owner="keywords">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-03T15:15:08.540666" level="INFO">${text_a} = A</msg>
-<var>${text_a}</var>
-<arg>${BOX_A}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-03T15:15:08.524521" elapsed="0.016222"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-03T21:23:57.710770" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-03T21:23:56.709780" elapsed="1.001241"/>
 </kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-03T15:15:08.552923" level="INFO">${text_b} = B</msg>
-<var>${text_b}</var>
-<arg>${BOX_B}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-03T15:15:08.541075" elapsed="0.011921"/>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-11-03T21:23:57.739323" level="INFO">Current page contains text 'You entered: ESC'.</msg>
+<arg>You entered: ESC</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-11-03T21:23:57.711767" elapsed="0.027827"/>
 </kw>
-<kw name="Should Not Be Equal" owner="BuiltIn">
-<arg>${text_a}</arg>
-<arg>${text_b}</arg>
-<doc>Fails if the given objects are equal.</doc>
-<status status="PASS" start="2024-11-03T15:15:08.553389" elapsed="0.000644"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-03T21:23:57.740805" level="INFO">Clicking element '//*[@id="target"]'.</msg>
+<arg>//*[@id="target"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T21:23:57.740268" elapsed="0.086095"/>
 </kw>
-<status status="PASS" start="2024-11-03T15:15:08.523958" elapsed="0.030200"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-03T21:23:58.828334" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-03T21:23:57.827159" elapsed="1.001398"/>
 </kw>
-<kw name="Drag And Drop B To A" owner="keywords">
-<kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2024-11-03T15:15:08.561966" level="INFO">${a} = &lt;selenium.webdriver.remote.webelement.WebElement (session="12C2D0E5-E2E4-48AD-98BB-CA62D055B436", element="node-8EE89606-A03A-42EA-A10D-DD710DA5673A")&gt;</msg>
-<var>${a}</var>
-<arg>${BOX_A}</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-11-03T15:15:08.554912" elapsed="0.007114"/>
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>//body</arg>
+<arg>\uE00D</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-03T21:23:58.829464" elapsed="0.091490"/>
 </kw>
-<kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2024-11-03T15:15:08.567932" level="INFO">${b} = &lt;selenium.webdriver.remote.webelement.WebElement (session="12C2D0E5-E2E4-48AD-98BB-CA62D055B436", element="node-2D766CE1-8814-4BCD-BF27-ED1B0C19AD34")&gt;</msg>
-<var>${b}</var>
-<arg>${BOX_B}</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-11-03T15:15:08.562286" elapsed="0.005702"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-03T21:23:59.922916" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-03T21:23:58.921836" elapsed="1.001308"/>
 </kw>
-<kw name="Drag And Drop" owner="SeleniumLibrary">
-<arg>${b}</arg>
-<arg>${a}</arg>
-<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" start="2024-11-03T15:15:08.568243" elapsed="1.008384"/>
-</kw>
-<status status="PASS" start="2024-11-03T15:15:08.554557" elapsed="1.022387"/>
-</kw>
-<kw name="Validate Boxes Swapped" owner="keywords">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-03T15:15:09.590800" level="INFO">${text_a} = A</msg>
-<var>${text_a}</var>
-<arg>${BOX_A}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-03T15:15:09.578132" elapsed="0.012719"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-03T15:15:09.602279" level="INFO">${text_b} = B</msg>
-<var>${text_b}</var>
-<arg>${BOX_B}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-03T15:15:09.591060" elapsed="0.011277"/>
-</kw>
-<kw name="Should Not Be Equal" owner="BuiltIn">
-<arg>${text_a}</arg>
-<arg>${text_b}</arg>
-<doc>Fails if the given objects are equal.</doc>
-<status status="PASS" start="2024-11-03T15:15:09.602590" elapsed="0.000382"/>
-</kw>
-<status status="PASS" start="2024-11-03T15:15:09.577519" elapsed="0.025595"/>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-11-03T21:23:59.945976" level="INFO">Current page contains text 'You entered: SPACE'.</msg>
+<arg>You entered: SPACE</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-11-03T21:23:59.923641" elapsed="0.022529"/>
 </kw>
 <kw name="Cerrar el navegador" owner="keywords" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-03T15:15:09.604098" elapsed="0.260713"/>
+<status status="PASS" start="2024-11-03T21:23:59.947819" elapsed="2.268057"/>
 </kw>
-<status status="PASS" start="2024-11-03T15:15:09.603702" elapsed="0.261242"/>
+<status status="PASS" start="2024-11-03T21:23:59.947100" elapsed="2.269120"/>
 </kw>
-<tag>drag_drop</tag>
-<status status="PASS" start="2024-11-03T15:15:05.438615" elapsed="4.426434"/>
+<doc>prueba de presionar teclas</doc>
+<tag>teclas_presionadas</tag>
+<status status="PASS" start="2024-11-03T21:23:46.051881" elapsed="16.164866"/>
 </test>
 <doc>Suite de pruebas para validar la funcionalidad de la aplicación "The Internet".</doc>
-<status status="PASS" start="2024-11-03T15:15:05.341274" elapsed="4.524224"/>
+<status status="PASS" start="2024-11-03T21:23:45.497865" elapsed="16.720296"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">drag_drop</stat>
+<stat pass="1" fail="0" skip="0">teclas_presionadas</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-11-03T21:23:46.705967" level="WARN">The chromedriver version (129.0.6668.100) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (130.0.6723.92); currently, chromedriver 130.0.6723.91 is recommended for chrome 130.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>

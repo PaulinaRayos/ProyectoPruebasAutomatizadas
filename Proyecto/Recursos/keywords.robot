@@ -57,3 +57,16 @@ Desplazarse Hasta el Fondo de la Página
 
 Validar Opciones del Menú Visibles
     Wait Until Element Is Visible    ${MENU_OPTIONS}    timeout=5s
+
+Logearte
+    [Arguments]    ${username}      ${password}
+    Input Text      //*[@id="username"]     ${username}
+    Sleep   1s
+    Input Text      //*[@id="password"]     ${password}
+    Sleep   1s
+    Click element   //*[@id="login"]/button/i
+    Sleep   1s
+
+Logout
+    Click element   //*[@id="content"]/div/a/i
+    Sleep   1s

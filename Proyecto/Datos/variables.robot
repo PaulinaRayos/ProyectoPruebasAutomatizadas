@@ -20,3 +20,8 @@ ${CHECKBOX}                xpath=//form[@id='checkbox-example']//input[@type='ch
 ${ENABLE_BUTTON}           xpath=//button[text()='Enable']
 ${INPUT_FIELD}             xpath=//form[@id='input-example']//input[@type='text']
 ${MENU_OPTIONS}            xpath=//div[@id='content']//a[contains(@href, '/')]
+${VALID_LOGIN_USER}   tomsmith
+${VALID_LOGIN_PASSWORD}   SuperSecretPassword!
+${INVALID_LOGIN_USER}   tomsmith1
+${INVALID_LOGIN_PASSWORD}   SuperS1ecretPassword!
+${LOGOUT_BUTTON}    //*[@id="content"]/div/a/i

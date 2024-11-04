@@ -159,3 +159,57 @@ Prueba de Visibilidad de Opciones de Menu
     Validar Opciones del Menú Visibles
     Cerrar Navegador
 
+#Prueba de autenticación de formulario
+Autenticacion de formulario
+    [Tags]  autenticacion_de_formulario
+    [Documentation]    verifica que el formulario indique cuando sea valido o invalido el login
+    Inicializar el navegador con URL    https://the-internet.herokuapp.com/login
+    Sleep   5s
+
+    Logearte    ${VALID_LOGIN_USER}     ${VALID_LOGIN_PASSWORD}
+    Page should contain      You logged into a secure area!
+    Sleep   1s
+
+    Logout
+    Page should contain     You logged out of the secure area!
+    Sleep   3s
+
+    Logearte    ${INVALID_LOGIN_USER}   ${VALID_LOGIN_PASSWORD}
+    Sleep   1s
+    Page should contain      Your username is invalid!
+
+    Logearte    ${VALID_LOGIN_USER}   ${INVALID_LOGIN_PASSWORD}
+    Sleep   1s
+    Page should contain      Your password is invalid!
+
+#Prueba de teclas presionadas
+Teclas presionadas
+    [Tags]  teclas_presionadas
+    [Documentation]     prueba de presionar teclas
+    Inicializar el navegador con URL     https://the-internet.herokuapp.com/key_presses
+    Sleep   5s
+
+    Click element   //*[@id="target"]
+    Sleep   1s
+    Press Key    //body   \uE00C
+    Sleep   1s
+
+    Page should contain     You entered: ESC
+
+    Click element   //*[@id="target"]
+    Sleep   1s
+    Press Key    //body   \uE00D
+    Sleep   1s
+
+    Page should contain     You entered: SPACE
+
+
+
+
+
+
+
+
+
+
+
